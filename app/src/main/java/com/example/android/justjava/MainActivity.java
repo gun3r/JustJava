@@ -18,6 +18,7 @@ import android.widget.TextView;
  * This app displays an order form to order coffee.
  */
 public class MainActivity extends AppCompatActivity {
+
     int quantity = 2;
 
     @Override
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity {
         String priceMessage = createOrderSummary(price);
         displayMessage(priceMessage);
     }
+
     /**
      * Calculates the price of the order.
      */
@@ -56,12 +58,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void increment(View view) {
-        quantity ++;
+        quantity++;
         displayQuantity(quantity);
     }
 
     public void decrement(View view) {
-        quantity --;
+        quantity--;
         displayQuantity(quantity);
     }
 
